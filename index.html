@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 Psychology Study Guide</title>
+<style>
+:root{
+  --ink:#193b3b;
+  --green:#17685b;
+  --light:#eaf4ef;
+  --border:#cadbd3;
+  --background:#f5f6f1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.65;
+  color:var(--ink);
+  background:var(--background);
+}
+header{
+  background:#193f3b;
+  color:white;
+  padding:45px 24px;
+}
+header>div{max-width:1100px;margin:auto}
+h1{font-size:clamp(32px,5vw,48px);line-height:1.15;margin:12px 0}
+header p{max-width:750px;color:#e1eee7}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:13px}
+.layout{
+  max-width:1200px;
+  margin:30px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:230px minmax(0,1fr);
+  gap:28px;
+}
+aside{
+  position:sticky;
+  top:20px;
+  align-self:start;
+  max-height:92vh;
+  overflow:auto;
+}
+nav a{
+  display:block;
+  padding:7px 10px;
+  color:var(--green);
+  text-decoration:none;
+  border-radius:6px;
+  font-size:14px;
+}
+nav a:hover{background:var(--light)}
+main{min-width:0}
+section{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:28px;
+  margin-bottom:24px;
+}
+h2{font-size:26px;line-height:1.25;margin-top:0}
+h3{font-size:20px;margin-top:25px}
+.callout{
+  background:var(--light);
+  border-left:5px solid var(--green);
+  padding:16px 20px;
+  border-radius:6px;
+  margin:20px 0;
+}
+.table-wrap{overflow-x:auto}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:15px;
+  margin:18px 0;
+}
+th,td{
+  border-bottom:1px solid var(--border);
+  text-align:left;
+  vertical-align:top;
+  padding:12px;
+}
+th{background:var(--light)}
+tr:nth-child(even){background:#f8faf8}
+button,select{
+  font:inherit;
+  padding:10px 15px;
+  border:1px solid #8cac9c;
+  border-radius:8px;
+  color:var(--ink);
+  background:white;
+}
+button{cursor:pointer}
+button.primary{background:var(--green);color:white}
+button:hover{filter:brightness(.95)}
+button:disabled{opacity:.5;cursor:default}
+.tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.small{font-size:14px;color:#536b64}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+details{
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:14px;
+}
+summary{font-weight:bold;cursor:pointer}
+fieldset{
+  margin:24px 0;
+  padding:18px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  min-width:0;
+}
+legend{font-weight:bold;max-width:100%;padding:0 7px}
+.option{
+  display:flex;
+  gap:12px;
+  align-items:baseline;
+  background:#f4f7f3;
+  padding:10px;
+  margin:7px 0;
+  border-radius:7px;
+  cursor:pointer;
+}
+.option input{flex:none}
+.correct-choice{outline:2px solid var(--green)}
+.incorrect-choice{outline:2px solid #aa402a}
+.feedback{
+  background:var(--light);
+  border-left:4px solid var(--green);
+  padding:12px;
+  margin-top:15px;
+}
+.feedback.incorrect{background:#fff0e8;border-color:#aa402a}
+.results{
+  background:var(--light);
+  padding:20px;
+  border-radius:10px;
+  margin:20px 0;
+}
+.topic-score{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  padding:7px 0;
+  border-bottom:1px solid #bfd1c6;
+}
+footer{text-align:center;padding:20px;font-size:14px}
+:focus-visible{outline:3px solid #ba5c22;outline-offset:4px}
+[hidden]{display:none!important}
+.skip{position:absolute;left:-10000px}
+.skip:focus{left:10px;top:10px;background:white;padding:10px;z-index:10}
+@media(max-width:850px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static;max-height:none}
+  nav{columns:2}
+}
+@media(max-width:500px){
+  section{padding:20px}
+  .layout{padding:0 12px}
+  .cards{grid-template-columns:1fr}
+  nav{columns:1}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+@media print{
+  body{background:white;color:black;font-size:11pt}
+  header{background:white;color:black;padding:0}
+  header p{color:black}
+  aside,.noprint,#flashcards,#practice,footer{display:none!important}
+  .layout{display:block;padding:0;margin:0}
+  section{border:0;padding:0;margin:20px 0}
+  h2,h3{break-after:avoid}
+  tr{break-inside:avoid}
+  .table-wrap{overflow:visible}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to study guide</a>
+
+<header>
+  <div>
+    <div class="eyebrow">Dr. Misty Marlowe • Chapter 1</div>
+    <h1>Psychology Foundations</h1>
+    <p>
+      Learn the concepts, distinguish similar ideas, and practice applying
+      what you know to new situations.
+    </p>
+    <p>12 study sections • 24 flashcards • 54 practice questions</p>
+  </div>
+</header>
+
+<div class="layout">
+<aside>
+  <strong>Your study pathway</strong>
+  <nav aria-label="Study guide navigation">
+    <a href="#start">How to use this guide</a>
+    <a href="#science">1. Psychology as a science</a>
+    <a href="#specialties">2. Psychology specialties</a>
+    <a href="#history">3. History and major figures</a>
+    <a href="#perspectives">4. Five perspectives</a>
+    <a href="#debates">5. Major debates</a>
+    <a href="#method">6. Scientific method</a>
+    <a href="#research">7. Research methods</a>
+    <a href="#correlation">8. Correlations</a>
+    <a href="#experiments">9. Experiments</a>
+    <a href="#bias">10. Bias and blinding</a>
+    <a href="#ethics">11. Ethics and findings</a>
+    <a href="#careers">12. Careers and diversity</a>
+    <a href="#checklist">Final checklist</a>
+    <a href="#flashcards">Retrieval flashcards</a>
+    <a href="#practice">Practice quiz</a>
+  </nav>
+  <button type="button" id="printButton">Print study guide</button>
+</aside>
+
+<main id="main">
+
+<section id="start">
+  <h2>How to use this guide</h2>
+  <p>
+    This guide follows the concepts in your Chapter 1 test-bank topics.
+    Your goal is to recognize the concept even when an example changes.
+  </p>
+  <ol>
+    <li>Study one section, then look away and explain it aloud.</li>
+    <li>Create an example for each term instead of memorizing definitions alone.</li>
+    <li>Take the practice quiz without notes.</li>
+    <li>Explain why the correct answer fits and why the alternatives do not.</li>
+    <li>Review missed concepts the next day and try again.</li>
+  </ol>
+  <div class="callout">
+    <strong>Read → recall → apply → review.</strong>
+    Aim to explain concepts independently. Practice scores identify study
+    needs; they do not guarantee an exam score.
+  </div>
+</section>
+
+<section id="science">
+  <h2>1. Psychology is a science</h2>
+  <p>
+    <strong>Psychology is the scientific study of behavior and mental processes.</strong>
+    It includes much more than therapy and psychological disorders.
+  </p>
+  <ul>
+    <li><strong>Behavior:</strong> observable actions, such as speaking, studying, or helping.</li>
+    <li><strong>Mental processes:</strong> thoughts, memories, emotions, perceptions, and decisions.</li>
+    <li><strong>Empirical evidence:</strong> information obtained through systematic observation and measurement.</li>
+    <li><strong>Critical thinking:</strong> evaluating evidence, questioning assumptions, and considering alternative explanations.</li>
+  </ul>
+  <div class="callout">
+    <strong>Test clue:</strong> A scientific explanation relies on evidence.
+    “I believe it” or “I know someone who experienced it” does not, by itself,
+    establish a scientific conclusion.
+  </div>
+  <p>
+    <strong>Try it:</strong> A friend says a study strategy works because it
+    helped one person. What additional information would you want?
+    Consider systematic comparisons, measurement, and alternative explanations.
+  </p>
+</section>
+
+<section id="specialties">
+  <h2>2. Match the specialty to the problem</h2>
+  <p>
+    Identify the main question being asked. The same behavior can be studied
+    by several specialties; the research focus determines the best match.
+  </p>
+
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th scope="col">Specialty</th><th scope="col">Focus</th><th scope="col">Scenario clue</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Behavioral neuroscience</td><td>Biological bases of behavior</td><td>Brain cells, nervous system, hormones</td></tr>
+      <tr><td>Experimental psychology</td><td>Basic processes of sensing, perceiving, learning, and thinking</td><td>Basic psychological processes</td></tr>
+      <tr><td>Cognitive psychology</td><td>Thinking, memory, attention, language, reasoning, and decisions</td><td>Remembering, interpreting, solving problems</td></tr>
+      <tr><td>Developmental psychology</td><td>Growth and change from conception through death</td><td>Age differences and lifespan changes</td></tr>
+      <tr><td>Personality psychology</td><td>Relatively consistent traits and individual differences</td><td>Stable shyness, sociability, or emotional tendencies</td></tr>
+      <tr><td>Social psychology</td><td>How people influence one another</td><td>Conformity, persuasion, aggression, attraction</td></tr>
+      <tr><td>Health psychology</td><td>Psychological influences on physical health and illness</td><td>Exercise, nutrition, stress and health</td></tr>
+      <tr><td>Clinical psychology</td><td>Assessment, diagnosis, and treatment of psychological problems</td><td>Symptoms, assessment, treatment effectiveness</td></tr>
+      <tr><td>Counseling psychology</td><td>In this chapter, educational, social, and career adjustment</td><td>College adjustment or career choices</td></tr>
+      <tr><td>Clinical neuropsychology</td><td>Clinical brain–behavior relationships</td><td>Cognitive changes after brain injury or disease</td></tr>
+      <tr><td>Evolutionary psychology</td><td>Inherited tendencies and possible ancestral adaptive functions</td><td>Natural selection and adaptation</td></tr>
+      <tr><td>Behavioral genetics</td><td>Genetic and environmental contributions to behavioral differences</td><td>Inherited tendencies, twin and family comparisons</td></tr>
+      <tr><td>Industrial/organizational psychology</td><td>Behavior in the workplace</td><td>Employee motivation, selection, teamwork, leadership</td></tr>
+      <tr><td>Educational psychology</td><td>Teaching and learning processes</td><td>Academic motivation and instructional strategies</td></tr>
+      <tr><td>School psychology</td><td>Psychological and educational needs in school settings</td><td>Assessment and support for students</td></tr>
+      <tr><td>Forensic psychology</td><td>Psychology and legal issues</td><td>Eyewitness memory and legal decision making</td></tr>
+      <tr><td>Environmental/climate psychology</td><td>People and their physical environments</td><td>Recycling, drought, conservation</td></tr>
+      <tr><td>Cross-cultural psychology</td><td>Similarities and differences across cultural contexts</td><td>Comparing cultural norms and behavior</td></tr>
+      <tr><td>Diversity science</td><td>Scientific study of diversity and underrepresented groups</td><td>Race, ethnicity, religion, class, and context</td></tr>
+      <tr><td>Program evaluation</td><td>Whether an organized program meets its goals</td><td>Assessing a preschool or community initiative</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Distinctions to practice</h3>
+  <ul>
+    <li><strong>Social vs. personality:</strong> influence from other people vs. relatively stable individual traits.</li>
+    <li><strong>Developmental vs. educational:</strong> lifespan change vs. teaching and learning.</li>
+    <li><strong>Health vs. clinical:</strong> physical wellness and illness vs. psychological assessment and treatment.</li>
+    <li><strong>Evolutionary vs. behavioral genetics:</strong> possible ancestral adaptive functions vs. genetic and environmental contributions to differences.</li>
+  </ul>
+  <div class="callout">
+    The bank treats cognitive psychology as a subspecialty of experimental
+    psychology. Psychologists across specialties can conduct experiments;
+    experiments are not restricted to experimental psychologists.
+  </div>
+</section>
+
+<section id="history">
+  <h2>3. History and major figures</h2>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Person or movement</th><th scope="col">Connection to remember</th></tr></thead>
+    <tbody>
+      <tr><td>John Locke</td><td><strong>Tabula rasa</strong> means blank slate; experience shapes development.</td></tr>
+      <tr><td>Wilhelm Wundt</td><td>Established a psychology laboratory in Leipzig in <strong>1879</strong>; associated in this chapter with structuralism.</td></tr>
+      <tr><td>Structuralism</td><td>Analyzes basic elements of conscious experience: <strong>What are its parts?</strong></td></tr>
+      <tr><td>Introspection</td><td>Reporting one's own conscious sensations and experiences.</td></tr>
+      <tr><td>William James</td><td>Functionalism: <strong>What purpose does behavior serve?</strong></td></tr>
+      <tr><td>John Dewey</td><td>Functionalism and its educational applications.</td></tr>
+      <tr><td>Gestalt psychology</td><td>Perception organizes elements into meaningful <strong>wholes</strong>.</td></tr>
+      <tr><td>Sigmund Freud</td><td>Psychodynamic perspective; unconscious motives and conflicts.</td></tr>
+      <tr><td>John B. Watson</td><td>Early American behaviorism; observable behavior and environmental influence.</td></tr>
+      <tr><td>B. F. Skinner</td><td>Behavioral perspective; consequences shape behavior.</td></tr>
+      <tr><td>Mary Whiton Calkins</td><td>First female president of the American Psychological Association.</td></tr>
+      <tr><td>Karen Horney</td><td>Psychodynamic theorist; founded the American Journal of Psychoanalysis.</td></tr>
+      <tr><td>Mamie Phipps Clark</td><td>Racial identification and self-esteem research contributed to school-desegregation cases.</td></tr>
+      <tr><td>Charles Darwin</td><td>Natural selection favors inherited traits supporting adaptation and reproduction.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout">
+    <strong>Structure = parts. Function = purpose. Gestalt = whole.</strong>
+  </div>
+  <p>
+    Describing the sweetness, temperature, and bitterness of tea illustrates
+    introspection. Asking how fear helps someone escape danger reflects
+    functionalism. Recognizing a melody as an organized pattern illustrates Gestalt.
+  </p>
+  <p>
+    The civil rights movement helped direct psychological attention toward
+    prejudice and discrimination.
+  </p>
+</section>
+
+<section id="perspectives">
+  <h2>4. Five major perspectives</h2>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Perspective</th><th scope="col">Main emphasis</th><th scope="col">Strong clues</th></tr></thead>
+    <tbody>
+      <tr><td>Neuroscience</td><td>Biological functioning</td><td>Brain activity, neurons, hormones, heredity</td></tr>
+      <tr><td>Psychodynamic</td><td>Unconscious motives and conflicts</td><td>Hidden forces, unresolved conflicts, earlier experiences</td></tr>
+      <tr><td>Behavioral</td><td>Observable behavior and environmental learning</td><td>Rewards, consequences, learned responses</td></tr>
+      <tr><td>Cognitive</td><td>Information processing and interpretations</td><td>Memory, attention, beliefs, self-talk</td></tr>
+      <tr><td>Humanistic</td><td>Choice, meaning, growth, and potential</td><td>Free will, agency, personal development</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>One behavior, five explanations</h3>
+  <p>A student avoids giving presentations.</p>
+  <ul>
+    <li><strong>Neuroscience:</strong> What biological arousal accompanies the anxiety?</li>
+    <li><strong>Psychodynamic:</strong> Are unconscious conflicts contributing?</li>
+    <li><strong>Behavioral:</strong> Has escaping presentations reinforced avoidance?</li>
+    <li><strong>Cognitive:</strong> Does the student predict embarrassment?</li>
+    <li><strong>Humanistic:</strong> How can the student exercise choice and pursue growth?</li>
+  </ul>
+  <div class="callout">
+    Match the <strong>explanation</strong>, not just the behavior.
+    A question about memory suggests cognitive psychology; a question
+    explicitly about the neural activity supporting memory emphasizes neuroscience.
+  </div>
+</section>
+
+<section id="debates">
+  <h2>5. Major debates</h2>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Debate</th><th scope="col">Distinction</th></tr></thead>
+    <tbody>
+      <tr><td>Nature vs. nurture</td><td>Inherited/biological influences vs. experience/environmental influences</td></tr>
+      <tr><td>Conscious vs. unconscious causes</td><td>Aware thoughts and intentions vs. processes outside awareness</td></tr>
+      <tr><td>Observable behavior vs. internal mental processes</td><td>Directly measurable actions vs. thoughts, memories, and interpretations</td></tr>
+      <tr><td>Free will vs. determinism</td><td>Capacity to choose vs. behavior shaped by prior causes and constraints</td></tr>
+      <tr><td>Individual differences vs. universal principles</td><td>What makes people distinctive vs. patterns shared across people</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <ul>
+    <li>Parenting, schooling, and experiences point toward <strong>nurture</strong>.</li>
+    <li>Inherited biological tendencies point toward <strong>nature</strong>.</li>
+    <li>Watson's strong claims about training children emphasize <strong>nurture</strong>.</li>
+    <li>Humanism emphasizes <strong>free will</strong> and individual experience.</li>
+    <li>Negative self-talk suggests a <strong>cognitive</strong> explanation.</li>
+    <li>Hidden childhood conflicts suggest <strong>unconscious</strong> causes.</li>
+  </ul>
+  <p>
+    Contemporary explanations often combine biological, psychological, and
+    social influences. Genetic influence does not make behavior inevitable.
+  </p>
+</section>
+
+<section id="method">
+  <h2>6. Scientific method and testable ideas</h2>
+
+  <div class="callout">
+    <strong>Identify a question → formulate an explanation → carry out research → communicate findings.</strong>
+  </div>
+  <ul>
+    <li>Developing a hypothesis belongs to <strong>formulating an explanation</strong>.</li>
+    <li>Defining procedures, collecting data, and analyzing data belong to <strong>carrying out research</strong>.</li>
+    <li>Presenting findings at a conference belongs to <strong>communicating findings</strong>.</li>
+  </ul>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Term</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead>
+    <tbody>
+      <tr><td>Theory</td><td>Broad explanation organizing evidence and generating predictions</td><td>Shared responsibility can reduce individual helping.</td></tr>
+      <tr><td>Hypothesis</td><td>Specific, testable prediction</td><td>People who believe others can help will offer help less often.</td></tr>
+      <tr><td>Variable</td><td>A characteristic that can take different values</td><td>Number of bystanders; amount of helping</td></tr>
+      <tr><td>Operational definition</td><td>Exact procedure for measuring or manipulating a variable</td><td>Helping = pressing an assistance button within 30 seconds.</td></tr>
+      <tr><td>Research</td><td>Systematic inquiry aimed at discovering knowledge</td><td>A planned study testing a prediction</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p><strong>Theory explains. Hypothesis predicts. Operational definition specifies the procedure.</strong></p>
+  <p>
+    “Happiness is feeling good” is abstract. “Happiness is a rating from 1 to 10
+    on this question” is operational. A concept can have multiple operational definitions.
+  </p>
+
+  <h3>Bystander effect and diffusion of responsibility</h3>
+  <p>
+    When several others are available to help, an individual may feel less
+    personal responsibility to act. This is <strong>diffusion of responsibility</strong>.
+    Distinguish having others present from believing others are able to help.
+  </p>
+</section>
+
+<section id="research">
+  <h2>7. Research methods</h2>
+  <p>Ask: <strong>What is the researcher actually doing?</strong></p>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Method</th><th scope="col">Identifying action</th><th scope="col">Strength and limitation</th></tr></thead>
+    <tbody>
+      <tr><td>Archival research</td><td>Examines existing records</td><td>Often efficient; records may be incomplete or unsuitable.</td></tr>
+      <tr><td>Naturalistic observation</td><td>Records naturally occurring behavior without intervening</td><td>Studies usual settings; offers limited control.</td></tr>
+      <tr><td>Survey</td><td>Asks people questions</td><td>Can reach many people; sampling and self-report biases matter.</td></tr>
+      <tr><td>Case study</td><td>Intensively examines one person or a small group</td><td>Provides depth; generalizability is limited.</td></tr>
+      <tr><td>Ethnographic research</td><td>Studies a culture in depth in its own setting</td><td>Provides rich cultural context; time intensive and context dependent.</td></tr>
+      <tr><td>Correlational research</td><td>Measures relationships between variables</td><td>Supports prediction; does not by itself establish causation.</td></tr>
+      <tr><td>Experiment</td><td>Manipulates a variable and compares outcomes under controlled conditions</td><td>Supports causal inference when well designed; has practical and ethical limits.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>
+    Methods can overlap: surveys or archival records can supply data for a
+    correlational study. Read whether the question asks about data collection
+    or the overall research design.
+  </p>
+
+  <h3>Sample vs. population</h3>
+  <ul>
+    <li><strong>Population:</strong> the entire group of interest.</li>
+    <li><strong>Sample:</strong> the people actually studied.</li>
+    <li><strong>Representativeness:</strong> how well the sample reflects the target population.</li>
+  </ul>
+  <div class="callout">
+    A sample is part of a population. Randomly choosing students from one
+    class does not make them representative of all adults.
+  </div>
+  <p>
+    College students are often convenient research participants, but their
+    education and other characteristics may differ from the general population.
+  </p>
+</section>
+
+<section id="correlation">
+  <h2>8. Correlations: sign, strength, and limits</h2>
+  <p>
+    A correlation coefficient, <strong>r</strong>, ranges from
+    <strong>−1.00 to +1.00</strong>.
+  </p>
+  <ul>
+    <li><strong>Sign = direction.</strong></li>
+    <li><strong>Absolute value = strength of the linear relationship.</strong></li>
+  </ul>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Coefficient</th><th scope="col">Interpretation</th></tr></thead>
+    <tbody>
+      <tr><td>+.70</td><td>Higher values of one variable tend to accompany higher values of the other.</td></tr>
+      <tr><td>−.80</td><td>Higher values of one tend to accompany lower values of the other; stronger than +.70.</td></tr>
+      <tr><td>+.05</td><td>Very little linear association.</td></tr>
+      <tr><td>−1.00 or +1.00</td><td>Perfect linear association.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p><strong>Increasing strength:</strong> +.10 → +.50 → −.60.</p>
+  <div class="callout">
+    Negative does not mean weak. Positive does not mean good.
+    Ignore the sign when ranking strength.
+  </div>
+
+  <h3>Correlation does not establish causation</h3>
+  <p>
+    If study time and grades are associated, studying might influence grades,
+    grades might influence study habits, or another variable might influence both.
+  </p>
+  <p>
+    A coefficient near zero indicates little <strong>linear</strong>
+    association; a nonlinear relationship may still exist.
+  </p>
+</section>
+
+<section id="experiments">
+  <h2>9. Experiments: identify each component</h2>
+  <p>
+    <strong>Example:</strong> A researcher randomly assigns students to a quiet
+    room or a room with recorded conversation, then measures words recalled.
+  </p>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Component</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead>
+    <tbody>
+      <tr><td>Independent variable (IV)</td><td>What the researcher manipulates</td><td>Sound condition</td></tr>
+      <tr><td>Dependent variable (DV)</td><td>Measured outcome</td><td>Number of words recalled</td></tr>
+      <tr><td>Experimental condition</td><td>Condition of interest</td><td>Recorded conversation</td></tr>
+      <tr><td>Control/comparison condition</td><td>Baseline for comparison</td><td>Quiet room</td></tr>
+      <tr><td>Random assignment</td><td>Chance allocation to conditions</td><td>A random-number process assigns rooms.</td></tr>
+      <tr><td>Confound</td><td>Another factor systematically differs across conditions</td><td>Only the conversation room also has brighter lighting.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="callout">
+    <strong>IV = intervention varied. DV = data collected as the outcome.</strong>
+    Ask: What changed? What was measured?
+  </div>
+
+  <h3>Random sampling vs. random assignment</h3>
+  <ul>
+    <li><strong>Sampling:</strong> selecting people from a population.</li>
+    <li><strong>Assignment:</strong> allocating participants to research conditions.</li>
+  </ul>
+  <p>
+    Random assignment reduces systematic group differences on average; it
+    does not guarantee identical groups.
+  </p>
+  <p>
+    A control group alone does not establish causation. Manipulation,
+    appropriate comparison, and control of alternative explanations work together.
+    Experiments can also compare different conditions within the same participants.
+  </p>
+</section>
+
+<section id="bias">
+  <h2>10. Bias, placebos, and blinding</h2>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Term</th><th scope="col">Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>Participant expectations</td><td>Participants' beliefs about the study affect their behavior.</td></tr>
+      <tr><td>Experimenter expectations</td><td>Researchers' expectations influence interactions, measurement, or interpretation.</td></tr>
+      <tr><td>Experimental bias</td><td>Systematic distortion of research results.</td></tr>
+      <tr><td>Placebo</td><td>An inactive or sham comparison treatment.</td></tr>
+      <tr><td>Placebo effect</td><td>Treatment expectations influence outcomes.</td></tr>
+      <tr><td>Double-blind procedure</td><td>Participants and relevant interacting or assessing researchers do not know condition assignments.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>
+    A placebo comparison helps assess effects beyond treatment expectations.
+    Double blinding reduces both participant and experimenter expectation effects.
+  </p>
+  <div class="callout">
+    <strong>Assignment addresses group allocation. Blinding addresses knowledge of assignment.</strong>
+  </div>
+</section>
+
+<section id="ethics">
+  <h2>11. Ethics and interpreting findings</h2>
+  <div class="callout">
+    <strong>Informed consent → participation → debriefing.</strong>
+  </div>
+  <ul>
+    <li><strong>Informed consent:</strong> explains participation, relevant risks, voluntariness, and withdrawal rights.</li>
+    <li><strong>Debriefing:</strong> explains the study afterward and addresses any deception.</li>
+    <li><strong>Deception:</strong> sometimes serves a research purpose but requires ethical justification and oversight.</li>
+    <li><strong>Confidentiality:</strong> protects participants' information.</li>
+    <li><strong>Animal research:</strong> requires appropriate care and efforts to minimize pain, illness, and distress.</li>
+  </ul>
+  <p>Consent is an ongoing process, not merely a signature.</p>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Term</th><th scope="col">Meaning</th><th scope="col">Avoid this mistake</th></tr></thead>
+    <tbody>
+      <tr><td>Statistical significance</td><td>A result meets a statistical criterion under a specified model.</td><td>It does not prove a hypothesis or establish practical importance.</td></tr>
+      <tr><td>Replication</td><td>A new test of a previous finding, sometimes with modified procedures or samples.</td><td>It is not simply combining old study results.</td></tr>
+      <tr><td>Meta-analysis</td><td>Statistically combines findings from multiple studies.</td><td>It is not a single repeat experiment.</td></tr>
+      <tr><td>Generalizability</td><td>How far findings apply beyond the studied people and conditions.</td><td>A large convenience sample is not automatically representative.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>
+    In the bank, a “significant outcome” refers to statistical meaning.
+    Statistical significance is different from clinical relevance, effect size,
+    and certainty. Replication and converging evidence increase confidence.
+  </p>
+</section>
+
+<section id="careers">
+  <h2>12. Careers, diversity, and the field</h2>
+  <p>
+    Psychology majors develop skills in evaluating evidence, synthesizing
+    information, research, and communication. A bachelor's degree does not
+    automatically qualify someone for independent psychological practice.
+  </p>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Preparation</th><th scope="col">Chapter-level distinction</th></tr></thead>
+    <tbody>
+      <tr><td>PhD</td><td>Often emphasizes research alongside advanced training; some programs also train clinicians.</td></tr>
+      <tr><td>PsyD</td><td>Generally emphasizes clinical practice while including research training.</td></tr>
+      <tr><td>Psychiatrist</td><td>A physician, commonly with an MD or DO, specializing in mental health; may prescribe medication.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>
+    Clinical and counseling psychology overlap in actual practice. The bank's
+    adjustment-versus-disorders contrast is a simplified chapter distinction.
+  </p>
+  <p>
+    Psychologists work in universities, healthcare, businesses, government,
+    and other settings. Neuroscience connects many specialties.
+  </p>
+  <p>
+    Researcher and participant diversity helps broaden the questions asked and
+    the populations to which conclusions apply. A narrow research sample can
+    limit generalizability.
+  </p>
+  <div class="callout">
+    Verify exact workforce percentages, employment rankings, pay comparisons,
+    and growth predictions against assigned course materials. These claims
+    depend on the source and time period.
+  </div>
+</section>
+
+<section id="checklist">
+  <h2>Final retrieval checklist</h2>
+  <p>Without notes, can you:</p>
+  <ul>
+    <li>Define psychology and distinguish evidence from intuition?</li>
+    <li>Match each specialty to a new scenario?</li>
+    <li>Connect historical figures to their contributions?</li>
+    <li>Separate structuralism, functionalism, and Gestalt?</li>
+    <li>Apply all five perspectives to one behavior?</li>
+    <li>Explain the major debates?</li>
+    <li>Order scientific-method steps?</li>
+    <li>Distinguish theory, hypothesis, and operational definition?</li>
+    <li>Identify research methods and their limitations?</li>
+    <li>Separate sample from population?</li>
+    <li>Interpret correlation direction and strength?</li>
+    <li>Identify IV, DV, comparison conditions, and confounds?</li>
+    <li>Separate random sampling from random assignment?</li>
+    <li>Explain placebo comparisons and double blinding?</li>
+    <li>Distinguish consent, debriefing, replication, and meta-analysis?</li>
+    <li>Explain why significance does not establish practical importance?</li>
+  </ul>
+
+  <h3>A short study schedule</h3>
+  <p><strong>Session 1:</strong> Sections 1–5; generate your own examples.</p>
+  <p><strong>Session 2:</strong> Sections 6–12; reconstruct the comparison tables.</p>
+  <p><strong>Next day:</strong> Complete the practice quiz and review weak topics.</p>
+  <p><strong>Before the exam:</strong> Explain this checklist aloud without notes.</p>
+</section>
+
+<section id="flashcards">
+  <h2>Retrieval flashcards</h2>
+  <p>Say your answer before opening each card.</p>
+  <div class="cards" id="cardContainer"></div>
+</section>
+
+<section id="practice">
+  <h2>Practice quiz</h2>
+  <p>
+    Complete all questions or select a topic. Questions and choices shuffle
+    for each new attempt. Explanations appear after grading.
+  </p>
+
+  <div class="tools">
+    <label for="topic">Topic:</label>
+    <select id="topic">
+      <option value="all">All topics</option>
+    </select>
+    <button type="button" id="startButton">Start new attempt</button>
+  </div>
+
+  <p class="small">
+    Starting a new attempt clears current answers. Scores stay in your
+    browser and are not submitted. Reloading clears the session.
+  </p>
+
+  <p id="progress" role="status" aria-live="polite"></p>
+  <div id="results" class="results" tabindex="-1" hidden></div>
+
+  <form id="quizForm">
+    <div id="questionContainer"></div>
+    <div class="tools">
+      <button class="primary" type="submit" id="gradeButton">Grade attempt</button>
+      <button type="button" id="retryButton" hidden>Retry missed questions</button>
+    </div>
+  </form>
+
+  <noscript>
+    <p>Enable JavaScript to use flashcards and practice questions. The study guide above remains readable.</p>
+  </noscript>
+</section>
+
+</main>
+</div>
+
+<footer>
+  Original practice questions based on Chapter 1 topics.
+  Practice performance does not guarantee an exam score.
+</footer>
+
+<script>
+"use strict";
+
+/*
+Question format:
+[
+  topic,
+  question,
+  [four answer choices],
+  correct answer index (0–3),
+  explanation
+]
+*/
+const questions = [
+  [
+    "Science",
+    "What makes a psychological explanation scientific?",
+    [
+      "It agrees with common sense.",
+      "It relies on systematic observation and measurement.",
+      "It comes from a confident speaker.",
+      "It fits one person's experience."
+    ],
+    1,
+    "Scientific explanations rely on empirical evidence. Confidence, intuition, and anecdotes alone do not systematically test a claim."
+  ],
+  [
+    "Science",
+    "Evaluating evidence and considering alternative explanations demonstrates:",
+    ["Introspection","Determinism","Critical thinking","Random assignment"],
+    2,
+    "Critical thinking involves examining evidence and assumptions before reaching a conclusion."
+  ],
+  [
+    "Specialties",
+    "A researcher studies how damage to brain cells changes movement. Which specialty best fits?",
+    ["Behavioral neuroscience","Social psychology","Counseling psychology","Program evaluation"],
+    0,
+    "The focus on biological mechanisms points to behavioral neuroscience."
+  ],
+  [
+    "Specialties",
+    "A researcher studies attention and memory for directions. Which specialty best fits?",
+    ["Health psychology","Forensic psychology","Personality psychology","Cognitive psychology"],
+    3,
+    "Attention and memory are cognitive processes."
+  ],
+  [
+    "Specialties",
+    "A study follows friendship changes from childhood into adulthood. Which specialty best fits?",
+    ["Industrial/organizational psychology","Developmental psychology","Forensic psychology","Behavioral genetics"],
+    1,
+    "Change across ages is the key developmental clue."
+  ],
+  [
+    "Specialties",
+    "One researcher studies stable shyness; another studies conformity under peer pressure. Their specialties are:",
+    ["Social; personality","Health; developmental","Personality; social","Clinical; cognitive"],
+    2,
+    "Stable traits indicate personality psychology; group influence indicates social psychology."
+  ],
+  [
+    "Specialties",
+    "Developing strategies to maintain exercise and nutritious eating most directly fits:",
+    ["Health psychology","Gestalt psychology","Forensic psychology","Clinical neuropsychology"],
+    0,
+    "Health psychology examines behavior related to physical health and illness."
+  ],
+  [
+    "Specialties",
+    "A company wants to improve team motivation and manager–employee relationships. Which specialty fits?",
+    ["Developmental psychology","Counseling psychology","Evolutionary psychology","Industrial/organizational psychology"],
+    3,
+    "I/O psychology studies workplace behavior, including motivation, teamwork, and leadership."
+  ],
+  [
+    "Specialties",
+    "Under the chapter's simplified distinction, helping students with career choices and social adjustment best fits:",
+    ["Behavioral neuroscience","Counseling psychology","Behavioral genetics","Environmental psychology"],
+    1,
+    "The chapter emphasizes educational, social, and career adjustment for counseling psychology. Actual clinical and counseling practice overlaps."
+  ],
+  [
+    "Specialties",
+    "A psychologist studies errors in eyewitness testimony. Which specialty fits?",
+    ["School psychology","Health psychology","Forensic psychology","Program evaluation"],
+    2,
+    "Forensic psychology applies psychological knowledge to legal issues."
+  ],
+  [
+    "Specialties",
+    "Studying how teaching strategies affect learning most directly fits:",
+    ["Educational psychology","Evolutionary psychology","Clinical psychology","Personality psychology"],
+    0,
+    "Educational psychology focuses on teaching and learning processes."
+  ],
+  [
+    "Specialties",
+    "An investigator asks whether a community preschool initiative met its goals. This is:",
+    ["Cognitive psychology","Cross-cultural psychology","Social neuroscience","Program evaluation"],
+    3,
+    "Program evaluation assesses whether an organized program achieves its objectives."
+  ],
+  [
+    "Specialties",
+    "Studying how drought influences household water conservation best fits:",
+    ["Clinical neuropsychology","Climate and environmental psychology","Personality psychology","Psychodynamic psychology"],
+    1,
+    "The relationship between people and the physical environment is the key clue."
+  ],
+  [
+    "Specialties",
+    "Which pairing is accurate?",
+    [
+      "Behavioral genetics—only conscious self-report",
+      "Evolutionary psychology—rejects inheritance",
+      "Behavioral genetics—genetic and environmental contributions to behavioral differences",
+      "Diversity science—only workplace productivity"
+    ],
+    2,
+    "Behavioral genetics investigates genetic and environmental contributions to differences in behavior."
+  ],
+  [
+    "History",
+    "Which pairing matches this chapter's history coverage?",
+    [
+      "Wundt—psychology laboratory in 1879",
+      "Freud—first psychology laboratory in 1879",
+      "Skinner—Gestalt perception",
+      "James—blank slate philosophy"
+    ],
+    0,
+    "Wundt's 1879 laboratory is a major historical anchor. Locke is associated with the blank slate idea."
+  ],
+  [
+    "History",
+    "Reporting the sweetness, warmth, and bitterness of a drink illustrates:",
+    ["Random sampling","Meta-analysis","Functionalism","Introspection"],
+    3,
+    "Introspection involves reporting one's conscious experience."
+  ],
+  [
+    "History",
+    "Asking how fear helps someone adapt to danger best reflects:",
+    ["Structuralism","Functionalism","Archival research","Psychoanalysis"],
+    1,
+    "Functionalism asks what a process does and how it supports adaptation."
+  ],
+  [
+    "History",
+    "Recognizing a melody as an organized whole illustrates:",
+    ["Tabula rasa","Behavioral genetics","Gestalt psychology","Random assignment"],
+    2,
+    "Gestalt psychology emphasizes the organization of perception into meaningful wholes."
+  ],
+  [
+    "History",
+    "Which connection is correct?",
+    [
+      "Mary Whiton Calkins—first female APA president",
+      "John Locke—founder of psychodynamic psychology",
+      "Mamie Phipps Clark—originator of structuralism",
+      "Karen Horney—founder of behaviorism"
+    ],
+    0,
+    "Calkins was the first female APA president. Clark studied racial identification and self-esteem."
+  ],
+  [
+    "History",
+    "Which connection should you remember?",
+    [
+      "Dewey—rejected educational applications",
+      "Watson—Gestalt perception",
+      "Clark—founded the 1879 laboratory",
+      "Horney—American Journal of Psychoanalysis"
+    ],
+    3,
+    "The chapter connects Karen Horney with the American Journal of Psychoanalysis."
+  ],
+  [
+    "Perspectives",
+    "A therapist emphasizes unconscious conflicts when explaining avoidance. Which perspective is this?",
+    ["Cognitive","Psychodynamic","Behavioral","Humanistic"],
+    1,
+    "Unconscious motives and conflicts are psychodynamic clues."
+  ],
+  [
+    "Perspectives",
+    "Explaining repeated studying through rewards that follow it reflects which perspective?",
+    ["Humanistic","Psychodynamic","Behavioral","Gestalt"],
+    2,
+    "The behavioral perspective emphasizes observable behavior, learning, and consequences."
+  ],
+  [
+    "Perspectives",
+    "A therapist emphasizes choice, meaning, and reaching one's potential. Which perspective is this?",
+    ["Humanistic","Neuroscience","Behavioral","Psychodynamic"],
+    0,
+    "Humanism emphasizes agency, meaning, growth, and potential."
+  ],
+  [
+    "Perspectives",
+    "A study explicitly focuses on brain activity during decision making. Which perspective fits?",
+    ["Humanistic","Structuralist","Functionalist only","Neuroscience"],
+    3,
+    "The explicit biological focus identifies the neuroscience perspective."
+  ],
+  [
+    "Perspectives",
+    "Explaining test anxiety through a student's interpretation of mistakes best reflects:",
+    ["Behavioral","Cognitive","Evolutionary only","Psychodynamic"],
+    1,
+    "Interpretations, beliefs, and information processing are cognitive clues."
+  ],
+  [
+    "Debates",
+    "Attributing differences mainly to parenting and schooling emphasizes:",
+    [
+      "Nature in nature versus nurture",
+      "Free will in free will versus determinism",
+      "Nurture in nature versus nurture",
+      "Unconscious causes"
+    ],
+    2,
+    "Parenting and schooling are environmental and experiential influences."
+  ],
+  [
+    "Debates",
+    "Which statement best represents determinism?",
+    [
+      "Behavior reflects prior causes and constraints.",
+      "Choices cannot have any influences.",
+      "Behavior cannot be studied scientifically.",
+      "Every behavior is fully conscious."
+    ],
+    0,
+    "Determinism emphasizes causes and constraints shaping behavior."
+  ],
+  [
+    "Scientific method",
+    "Which sequence matches the chapter's scientific method?",
+    [
+      "Research → explanation → question → communication",
+      "Communication → question → research → explanation",
+      "Question → communication → explanation → research",
+      "Question → explanation → research → communication"
+    ],
+    3,
+    "Identify a question, formulate an explanation, carry out research, and communicate findings."
+  ],
+  [
+    "Scientific method",
+    "A broad explanation generates a specific testable prediction. These are, respectively:",
+    ["Hypothesis; theory","Theory; hypothesis","Operational definition; theory","Sample; population"],
+    1,
+    "A theory is a broad explanation; a hypothesis is a specific, testable prediction."
+  ],
+  [
+    "Scientific method",
+    "Which is an operational definition of helping?",
+    [
+      "Being a caring person",
+      "Feeling responsible",
+      "Pressing an assistance button within 30 seconds",
+      "Believing assistance matters"
+    ],
+    2,
+    "An operational definition specifies a measurable procedure."
+  ],
+  [
+    "Scientific method",
+    "Several people can assist, and each feels less personally responsible. This illustrates:",
+    ["Diffusion of responsibility","Introspection","A placebo effect","A negative correlation by definition"],
+    0,
+    "Diffusion of responsibility describes reduced personal responsibility when others can also act."
+  ],
+  [
+    "Research methods",
+    "Analyzing already-existing attendance records is which data-collection method?",
+    ["Experiment","Survey","Ethnography","Archival research"],
+    3,
+    "Archival research examines existing records."
+  ],
+  [
+    "Research methods",
+    "Recording playground behavior without changing the situation is:",
+    ["Survey research","Naturalistic observation","Experimental research","Meta-analysis"],
+    1,
+    "Naturalistic observation documents behavior in its usual setting without manipulation."
+  ],
+  [
+    "Research methods",
+    "An intensive investigation of one unusual memory case is a:",
+    ["Survey","Randomized experiment","Case study","Population census"],
+    2,
+    "Case studies offer depth about an individual or small group but have limited generalizability."
+  ],
+  [
+    "Research methods",
+    "Extended study of a community's values in its own setting best fits:",
+    ["Ethnographic research","Double-blind research","Laboratory experimentation","A placebo procedure"],
+    0,
+    "Ethnography studies cultural meanings and practices in depth and in context."
+  ],
+  [
+    "Research methods",
+    "Asking 150 students questions about their study habits is:",
+    ["Archival research","Introspection only","Naturalistic observation","Survey research"],
+    3,
+    "Surveys ask participants questions about attitudes, experiences, or behavior."
+  ],
+  [
+    "Research methods",
+    "A university studies 120 students to draw conclusions about all enrolled students. The 120 are the:",
+    ["Population","Sample","Control condition","Independent variable"],
+    1,
+    "The sample is the subset studied. All enrolled students are the target population."
+  ],
+  [
+    "Correlations",
+    "Which coefficient shows the strongest linear relationship?",
+    ["+.42","+.05","−.83","−.31"],
+    2,
+    "Compare absolute values. The magnitude .83 exceeds .42, .05, and .31."
+  ],
+  [
+    "Correlations",
+    "A correlation of −.60 means:",
+    [
+      "Higher values of one variable tend to accompany lower values of the other.",
+      "One variable causes the other to decrease.",
+      "There is no relationship.",
+      "Both variables necessarily rise together."
+    ],
+    0,
+    "A negative coefficient indicates opposite directions. It does not establish causation."
+  ],
+  [
+    "Correlations",
+    "More sleep is associated with higher scores in an observational study. What can you conclude?",
+    [
+      "Sleep definitely causes higher scores.",
+      "Scores cannot influence sleep.",
+      "No third variable could matter.",
+      "Sleep and scores are associated."
+    ],
+    3,
+    "Correlational evidence supports association, while direction and third-variable explanations remain unresolved."
+  ],
+  [
+    "Experiments",
+    "Students receive different assigned noise levels, and recall is measured. The IV and DV are:",
+    ["Recall; noise level","Noise level; recall","Age; room number","Recall; age"],
+    1,
+    "Noise level is manipulated, making it the IV. Recall is measured, making it the DV."
+  ],
+  [
+    "Experiments",
+    "A coin flip determines each participant's condition. This is:",
+    ["Random sampling","Operational definition","Random assignment","Meta-analysis"],
+    2,
+    "Random assignment allocates participants to conditions; random sampling selects people from a population."
+  ],
+  [
+    "Experiments",
+    "Why include an appropriate baseline condition when evaluating a training program?",
+    [
+      "To help evaluate alternative explanations for change",
+      "To guarantee identical participants",
+      "To eliminate the need for random assignment",
+      "To ensure statistical significance"
+    ],
+    0,
+    "A comparison helps evaluate what might happen without the focal intervention."
+  ],
+  [
+    "Experiments",
+    "The treatment group also receives extra coaching that the control group does not receive. What is the concern?",
+    ["A perfect correlation","Debriefing","Representative sampling","A possible confound"],
+    3,
+    "Extra coaching systematically varies with treatment and could explain differences in outcomes."
+  ],
+  [
+    "Bias and blinding",
+    "An assistant unintentionally encourages the responses she expects. This illustrates:",
+    ["Participant expectations","Experimenter expectations","Random sampling","Replication"],
+    1,
+    "The expectation originates with the researcher and influences interactions."
+  ],
+  [
+    "Bias and blinding",
+    "Neither participants nor relevant assessors know who receives an active or inactive pill. This is:",
+    ["Archival research","Random sampling","Double blinding","Naturalistic observation"],
+    2,
+    "Double blinding conceals assignment from participants and relevant researchers."
+  ],
+  [
+    "Bias and blinding",
+    "What is a placebo?",
+    [
+      "An inactive or sham comparison treatment",
+      "A participant selected from a population",
+      "A method of random sampling",
+      "An explanation of unconscious conflict"
+    ],
+    0,
+    "A placebo resembles treatment without its active component."
+  ],
+  [
+    "Ethics",
+    "Which sequence is typical?",
+    [
+      "Debriefing → consent → study",
+      "Study → consent → debriefing",
+      "Consent → debriefing → study",
+      "Informed consent → study → debriefing"
+    ],
+    3,
+    "Consent precedes participation. Debriefing follows and explains the research."
+  ],
+  [
+    "Ethics",
+    "Which is part of informed consent?",
+    [
+      "A guarantee that the hypothesis is correct",
+      "Information about relevant risks and voluntary withdrawal",
+      "A requirement to finish despite discomfort",
+      "A promise that no information can ever be withheld"
+    ],
+    1,
+    "Informed consent addresses participation, relevant risks, voluntariness, and withdrawal."
+  ],
+  [
+    "Interpreting findings",
+    "Statistically combining findings from many studies is:",
+    ["A case study","Replication","Meta-analysis","Random assignment"],
+    2,
+    "Meta-analysis statistically combines study results. Replication conducts a new test."
+  ],
+  [
+    "Interpreting findings",
+    "Which interpretation of statistical significance is most accurate?",
+    [
+      "It does not by itself establish practical importance or prove a hypothesis.",
+      "It means the effect is necessarily large.",
+      "It guarantees replication.",
+      "It means chance cannot be involved."
+    ],
+    0,
+    "Statistical significance concerns a criterion under a model, not certainty or practical importance."
+  ],
+  [
+    "Careers and diversity",
+    "Which statement matches chapter-level career distinctions?",
+    [
+      "A psychology bachelor's degree automatically licenses therapy.",
+      "PsyD training has no research component.",
+      "Psychiatrists hold only psychology doctorates.",
+      "Psychiatrists are physicians; PsyD programs generally emphasize clinical practice."
+    ],
+    3,
+    "Psychiatrists have medical training. PsyD programs typically emphasize practice while including research training."
+  ],
+  [
+    "Careers and diversity",
+    "Why does limited participant diversity matter?",
+    [
+      "It guarantees invalid measurement.",
+      "It may limit generalizability to other groups.",
+      "It eliminates the need for replication.",
+      "It prevents any useful conclusions."
+    ],
+    1,
+    "A narrow participant group can restrict how confidently findings apply to other populations."
+  ],
+  [
+    "Careers and diversity",
+    "Which project best fits diversity science?",
+    [
+      "Measuring one neuron's firing in isolation",
+      "Testing only classroom acoustics",
+      "Studying how race, religion, and economic class shape experiences across groups",
+      "Measuring an inactive pill's ingredients"
+    ],
+    2,
+    "Diversity science scientifically examines diversity and its contexts, including underrepresented groups."
+  ]
+];
+
+const cards = [
+  ["Psychology","The scientific study of behavior and mental processes."],
+  ["Theory vs. hypothesis","Theory = broad explanation. Hypothesis = specific, testable prediction."],
+  ["Operational definition","The exact procedure used to measure or manipulate a variable."],
+  ["Independent vs. dependent variable","IV = manipulated. DV = measured outcome."],
+  ["Sampling vs. assignment","Sampling selects people; assignment allocates them to conditions."],
+  ["Correlation strength","Compare absolute values: −.80 is stronger than +.50."],
+  ["Correlation direction","Positive = same direction. Negative = opposite directions."],
+  ["Does correlation establish causation?","No. Direction of influence and third variables remain possible."],
+  ["Structuralism vs. functionalism","Parts of experience vs. purpose and adaptation."],
+  ["Five perspectives","Neuroscience, psychodynamic, behavioral, cognitive, humanistic."],
+  ["Humanistic clues","Choice, personal meaning, agency, growth, and potential."],
+  ["Behavioral vs. cognitive","Observable behavior and learning vs. mental processing and interpretations."],
+  ["Social vs. personality","Influence of others vs. relatively stable individual traits."],
+  ["Experimental vs. comparison condition","Condition of interest vs. an appropriate baseline."],
+  ["Double blinding","Participants and relevant interacting or assessing researchers do not know assignments."],
+  ["Consent vs. debriefing","Consent before participation; debriefing explains the study afterward."],
+  ["Replication vs. meta-analysis","A new test of a finding vs. statistically combining findings across studies."],
+  ["Statistical significance","Does not by itself prove a hypothesis or establish practical importance."],
+  ["Wundt","1879 psychology laboratory; associated in this chapter with structuralism."],
+  ["Locke","Tabula rasa means blank slate; emphasis on experience."],
+  ["James and Dewey","Functionalism and adaptation; Dewey also connects to education."],
+  ["Freud, Watson, and Skinner","Freud: psychodynamic. Watson and Skinner: behavioral."],
+  ["Calkins, Horney, and Clark","Calkins: first female APA president. Horney: psychoanalysis journal. Clark: racial identification, self-esteem, and desegregation."],
+  ["Diffusion of responsibility","Personal responsibility may diminish when others can also help."]
+];
+
+const get = id => document.getElementById(id);
+
+function makeElement(tag, text, className) {
+  const element = document.createElement(tag);
+  if (text !== undefined) element.textContent = text;
+  if (className) element.className = className;
+  return element;
+}
+
+function shuffle(items) {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+
+cards.forEach(([question, answer]) => {
+  const detail = makeElement("details");
+  detail.append(
+    makeElement("summary", question),
+    makeElement("p", answer)
+  );
+  get("cardContainer").append(detail);
+});
+
+const topics = [...new Set(questions.map(question => question[0]))];
+
+topics.forEach(topic => {
+  const option = makeElement("option", topic);
+  option.value = topic;
+  get("topic").append(option);
+});
+
+let activeQuestions = [];
+let missedQuestions = [];
+let graded = false;
+
+function updateProgress() {
+  const answered = get("quizForm").querySelectorAll("input:checked").length;
+  get("progress").textContent =
+    `${answered} of ${activeQuestions.length} answered.` +
+    (graded ? " Attempt graded." : "");
+}
+
+function startAttempt(pool) {
+  activeQuestions = shuffle(pool).map(question => ({
+    source: question,
+    order: shuffle([0, 1, 2, 3])
+  }));
+
+  missedQuestions = [];
+  graded = false;
+
+  get("questionContainer").replaceChildren();
+  get("results").replaceChildren();
+  get("results").hidden = true;
+  get("retryButton").hidden = true;
+  get("gradeButton").disabled = false;
+
+  activeQuestions.forEach((entry, index) => {
+    const [topic, prompt, options] = entry.source;
+    const fieldset = makeElement("fieldset");
+
+    fieldset.append(
+      makeElement("legend", `${index + 1}. ${prompt}`),
+      makeElement("p", topic, "small")
+    );
+
+    entry.order.forEach((originalIndex, displayedIndex) => {
+      const label = makeElement("label", undefined, "option");
+      const input = document.createElement("input");
+
+      input.type = "radio";
+      input.name = `question-${index}`;
+      input.id = `question-${index}-option-${displayedIndex}`;
+      input.value = String(originalIndex);
+      input.addEventListener("change", updateProgress);
+
+      label.append(
+        input,
+        makeElement("span", options[originalIndex])
+      );
+
+      fieldset.append(label);
+    });
+
+    get("questionContainer").append(fieldset);
+  });
+
+  updateProgress();
+}
+
+get("startButton").addEventListener("click", () => {
+  const topic = get("topic").value;
+  const pool = topic === "all"
+    ? questions
+    : questions.filter(question => question[0] === topic);
+
+  startAttempt(pool);
+});
+
+get("quizForm").addEventListener("submit", event => {
+  event.preventDefault();
+  if (graded) return;
+
+  const unanswered = activeQuestions.findIndex((entry, index) =>
+    !get("quizForm").querySelector(
+      `input[name="question-${index}"]:checked`
+    )
+  );
+
+  if (unanswered !== -1) {
+    const answered = get("quizForm").querySelectorAll("input:checked").length;
+
+    get("progress").textContent =
+      `Please answer question ${unanswered + 1} before grading. ` +
+      `${answered} of ${activeQuestions.length} answered.`;
+
+    get("quizForm").querySelector(
+      `input[name="question-${unanswered}"]`
+    ).focus();
+
+    return;
+  }
+
+  graded = true;
+  let correct = 0;
+  const topicResults = new Map();
+
+  activeQuestions.forEach((entry, index) => {
+    const [topic, prompt, options, answer, explanation] = entry.source;
+    const fieldset = get("questionContainer").children[index];
+    const selected = Number(
+      fieldset.querySelector("input:checked").value
+    );
+
+    const isCorrect = selected === answer;
+
+    if (isCorrect) correct++;
+    else missedQuestions.push(entry.source);
+
+    if (!topicResults.has(topic)) {
+      topicResults.set(topic, {correct: 0, total: 0});
+    }
+
+    const topicScore = topicResults.get(topic);
+    topicScore.total++;
+    if (isCorrect) topicScore.correct++;
+
+    fieldset.querySelectorAll("input").forEach(input => {
+      input.disabled = true;
+
+      if (Number(input.value) === answer) {
+        input.parentElement.classList.add("correct-choice");
+      } else if (input.checked) {
+        input.parentElement.classList.add("incorrect-choice");
+      }
+    });
+
+    fieldset.append(
+      makeElement(
+        "div",
+        `${isCorrect ? "Correct." : "Review this concept."} ` +
+        `Answer: ${options[answer]}. ${explanation}`,
+        isCorrect ? "feedback" : "feedback incorrect"
+      )
+    );
+  });
+
+  const percentage = Math.round(
+    correct / activeQuestions.length * 100
+  );
+
+  const results = get("results");
+
+  results.append(
+    makeElement(
+      "h3",
+      `${correct} / ${activeQuestions.length} correct • ${percentage}%`
+    ),
+    makeElement(
+      "p",
+      missedQuestions.length
+        ? "Review the explanations, revisit the matching guide sections, and explain each correction aloud before retrying."
+        : "Strong work on this attempt. Explain the concepts without notes and revisit them tomorrow."
+    )
+  );
+
+  topicResults.forEach((score, topic) => {
+    const row = makeElement("div", undefined, "topic-score");
+
+    row.append(
+      makeElement("span", topic),
+      makeElement(
+        "strong",
+        `${score.correct}/${score.total} ` +
+        `(${Math.round(score.correct / score.total * 100)}%)`
+      )
+    );
+
+    results.append(row);
+  });
+
+  results.hidden = false;
+  get("gradeButton").disabled = true;
+  get("retryButton").hidden = missedQuestions.length === 0;
+
+  updateProgress();
+  results.focus();
+});
+
+get("retryButton").addEventListener("click", () => {
+  const retryPool = [...missedQuestions];
+  startAttempt(retryPool);
+  get("progress").scrollIntoView({block: "center"});
+});
+
+get("printButton").addEventListener("click", () => {
+  window.print();
+});
+
+startAttempt(questions);
+</script>
+</body>
+</html>
